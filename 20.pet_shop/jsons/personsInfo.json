@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "username": "root",
+        "password": "root",
+        "type": "Admin"
+    },
+    {
+        "id": 2,
+        "username": "boran",
+        "password": "123",
+        "salary": "1000",
+        "type": "Worker"
+    },
+    {
+        "id": 3,
+        "username": "kaan",
+        "password": "123",
+        "balance": 999702,
+        "type": "Customer",
+        "animals": {
+            "dog": 0,
+            "cat": 4
+        }
+    },
+    {
+        "id": 4,
+        "username": "anam",
+        "password": "anam",
+        "salary": "200",
+        "type": "Worker"
+    }
+]
