@@ -1,0 +1,8 @@
+github.com/cetinboran/goarg v1.1.1-4 h1:0YKUAz3RW5HNC/nL9R7x7LAdipyWsMk+h10N80FCfiE=
+github.com/cetinboran/goarg v1.1.1-4/go.mod h1:rZunXhucZDNTdjZd7gYFOiapb8qoKY3qcLo/PMFBjUM=
+github.com/cetinboran/gojson v1.0.8-3 h1:UPC3nk+n2G3nHyXVrIi+F26Loo6Ar3LSzT7weYPtnRc=
+github.com/cetinboran/gojson v1.0.8-3/go.mod h1:tHT8aymKPzyYbK+9Ab19lw2fvAMsHMeEeUYUu/obQNE=
+github.com/mattn/go-runewidth v0.0.9 h1:Lm995f3rfxdpd6TSmuVCHVb/QhupuXlYr8sCI/QdE+0=
+github.com/mattn/go-runewidth v0.0.9/go.mod h1:H031xJmbD/WCDINGzjvQ9THkh0rPKHF+m2gUSrubnMI=
+github.com/olekukonko/tablewriter v0.0.5 h1:P2Ga83D34wi1o9J6Wh1mRuqd4mF/x/lgBS7N7AbDhec=
+github.com/olekukonko/tablewriter v0.0.5/go.mod h1:hPp6KlRPjbx+hW8ykQs1w3UBbZlj6HuIJcUGPhkA7kY=
