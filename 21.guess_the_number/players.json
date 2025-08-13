@@ -1,0 +1,24 @@
+[
+    {
+        "currentExp": 100,
+        "health": 1,
+        "level": 5,
+        "username": "boran",
+        "wins": [
+            21,
+            0,
+            0
+        ]
+    },
+    {
+        "currentExp": 0,
+        "health": 3,
+        "level": 1,
+        "username": "kaan",
+        "wins": [
+            0,
+            0,
+            0
+        ]
+    }
+]
