@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner</title>
+
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/form.css">
+    <link rel="stylesheet" href="/static/css/content.css">
+</head>
+
+<body>
+    {{ template "templates/header" }}
+
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="Scan/ScanForm" method="POST" enctype="multipart/form-data">
+                <div class="section-wrapper">
+                    <div class="section">
+                        <div class="title">{{ .Url }}</div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Path</div>
+                        <div><input type="text" name="path"></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Type</div>
+                        <select name="type">
+                            <option value="NONE">Select Type</option>
+                            <option value="GET">GET</option>
+                            <option value="POST">POST</option>
+                        </select>
+                    </div>
+                    <div class="section">
+                        <div class="label">Params</div>
+                        <div><textarea class="area" name="params" cols="20" rows="5" ></textarea></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Cookie</div>
+                        <div><input type="text" name="cookie"></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Wordlist</div>
+                        <input class="wordlist" type="file" name="wordlist">
+                    </div>
+                    <div class="section">
+                        <div class="label">Params Type</div>
+                        <div>
+                            <div class="label">Form</div>
+                            <div><input type="radio" name="paramsType" value="FORM" checked></div>
+                        </div>
+                        <div>
+                            <div class="label">Json</div>
+                            <div><input type="radio" name="paramsType" value="JSON"></div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Description</div>
+                        <div><input type="text" name="description"></div>
+                    </div>
+                    <div class="section">
+                        <div class="error">{{ .Error }}</div>
+                    </div>
+                    <div class="section">
+                        <!-- urlId olarak alıyorum form kısmından -->
+                        <div><button name="urlId" value="{{ .urlId }}" type="submit">Search</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

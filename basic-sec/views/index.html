@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/url.css">
+</head>
+
+<body>
+    {{template "templates/header" .}}
+
+    <!-- burda urls i range atıyorum. O structın içindeki değerler ile erişebiliriz -->
+    <div class="url-wrapper">
+        {{range .Urls}}
+        <div class="url">
+            <div class="link">{{.Url}}</div>
+            <div class="scanCount">{{ .ScanCount }}</div>
+            <div class="action">
+                <a href="/Scan?urlId={{ .Id }}">Scan</a>
+                <a href="/Url/Delete?urlId={{ .Id }}">Delete</a>
+                <!-- View De scanleri listelicem -->
+                <a href="/Scan/View?urlId={{ .Id }}">View</a>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</body>
+
+</html>

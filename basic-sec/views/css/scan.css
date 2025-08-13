@@ -1,0 +1,154 @@
+.scan-wrapper{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+.url-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    gap: 20px;
+}
+
+.url{
+    background-color: #031326;
+    color: wheat;
+
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.header-action a{
+    display: block;
+    background-color: rgb(2,0,36);
+    color: wheat;
+    text-decoration: none;
+    padding: 10px;
+
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.payload{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.header-action a:hover{
+    transition: all .2s;
+    background: wheat;
+    color: rgb(2,0,36);
+}
+
+.scan{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    background-color: #031326;
+    color: wheat;
+
+    gap: 10px;
+
+    width: 200px;
+    min-height: 200px;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 10px 5px 5px gray;
+
+    border-radius: 20px;
+}
+
+.holder{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+.label{
+    width: 50%;
+    font-weight: bold;
+}
+
+.result{
+    width: 50%;
+    text-align: right;
+}
+
+.action{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 10px;
+}
+
+.action a{
+    display: block;
+    color: wheat;
+    text-decoration: none;
+    padding: 5px;
+
+    border-radius: 20px;
+}
+
+.action a:hover{
+    transition: all .2s;
+    background: wheat;
+    color: rgb(2,0,36);
+}
+
+.page-wrapper{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+}
+
+.page-wrapper a{
+    display: block;
+    color: rgb(2,0,36);
+    background-color: wheat;
+
+    text-decoration: none;
+    padding: 8px;
+
+
+    border-radius: 20px;
+}
+
+.page-wrapper a:hover{
+    transition: all .2s;
+    background: rgb(2,0,36);
+    color: wheat;
+}

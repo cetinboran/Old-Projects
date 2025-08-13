@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+
+    <link rel="stylesheet" href="/static/css/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="EditProfileForm" method="POST">
+                <div class="section-wrapper">
+                    <div class="section">
+                        <div class="label">Username</div>
+                        <div><input type="text" name="username" value="{{ .Username }}"></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">E-mail</div>
+                        <div><input type="email" name="email" value="{{ .Email }}"></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Old Password</div>
+                        <div><input type="password" name="oldPassword" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">New Password</div>
+                        <div><input type="password" name="NewPassword" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Confirm Password</div>
+                        <div><input type="password" name="confirmPassword" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="error">{{ .Error }}</div>
+                    </div>
+                    <div class="section">
+                        <div><button type="submit">Edit Profile</button></div>
+                        <div><a href="/">Back</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

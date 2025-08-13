@@ -1,0 +1,87 @@
+body,html{
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 8px;
+
+    background-color: #031326;
+    color: wheat;
+
+    box-sizing: border-box;
+}
+
+header .left{
+    min-width: 50%;
+}
+
+header .right{
+    display: flex;
+
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+
+    min-width: 50%;
+
+    font-weight: bold;
+}
+
+.right .username{
+    font-size: larger;
+}
+
+.right a{
+    color: wheat;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.right a:hover{
+    transition: all 0.2s;
+    color: red;
+}
+
+/* NAV */
+
+.left ul{
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+
+    gap: 16px;
+    width: 100%;
+}
+
+.left ul li a{
+    display: block;
+    width: 200px;
+    padding: 4px;
+
+    text-align: center;
+    color: wheat;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+
+    border-radius: 20px;
+}
+
+.left ul li a:hover{
+    transition: all 0.2s;
+    color: rgb(241, 202, 129);
+
+    border-color: wheat;
+}

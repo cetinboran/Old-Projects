@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/scan.css">
+</head>
+
+<body>
+    {{template "templates/header" .}}
+
+    <!-- burda urls i range atıyorum. O structın içindeki değerler ile erişebiliriz -->
+    <div class="scan-wrapper">
+        <div class="url-wrapper">
+            <!-- Buraya delete all ekle -->
+            <div class="url">{{ .Url }}</div>
+            <div class="header-action">
+                <a href="/Scan/DeleteAll?urlId={{ .UrlId }}&userId={{ .Id }}">Delete All</a>
+            </div>
+        </div>
+        {{ $start := .Pages.Start }}
+        {{ $end := .Pages.End }}
+
+        {{ range $i, $scan := .Scanes }}
+            {{ if and (ge $i $start) (le $i $end) }}
+            <div class="scan">
+                <div class="holder">
+                    <div class="label">
+                        Description
+                    </div>
+                    <div class="result">
+                        {{.Description}}
+                    </div>
+                </div>
+                <div class="holder">
+                    <div class="label">
+                        Payload
+                    </div>
+                    <div class="result payload">
+                        {{ .Payload }}
+                    </div>
+                </div>
+                <div class="holder">
+                    <div class="label">
+                        Content Length
+                    </div>
+                    <div class="result">
+                        {{ .ContentLength }}
+                    </div>
+                </div>
+                <div class="holder">
+                    <div class="label">
+                        Status Code
+                    </div>
+                    <div class="result">
+                        {{ .Status }}
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="/Scan/Delete?scanId={{ .ScanId }}&urlId={{ .UrlId }}&userId={{ .UserId }}">Delete</a>
+                </div>
+            </div>
+            {{ end }}
+        {{ end }}
+
+        
+    </div>
+    <div class="page-wrapper">
+        <!-- Değişken tanımlama -->
+        {{ $pageCount := .Pages.PageCount }}
+        {{ $urlId := .Pages.UrlId }}
+        
+        {{range $i := $pageCount}}
+        <div><a href="/Scan/View?urlId={{ $urlId }}&page={{ $i }}">{{$i}}</a></div>
+        {{end}}
+    </div>
+</body>
+
+</html>

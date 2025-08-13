@@ -1,0 +1,36 @@
+body,html{
+    background-color: white !important;
+}
+
+.form-wrapper{
+    display: flex;
+    gap: 20px;
+    
+    min-width: fit-content !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.area{
+    resize: none;
+}
+
+.section .title{
+    color: wheat;
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+
+    width: 100%;
+}
+
+.wordlist{
+    color: wheat;
+    width: 100%;
+}
+
+.label{
+    width: 60% !important;
+}

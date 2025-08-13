@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="/static/css/form.css">
+    <link rel="stylesheet" href="/static/css/profile.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="section-wrapper">
+                <div class="section">
+                    <div class="label">Username:</div>
+                    <div class="result">{{ .Username }}</div>
+                </div>
+                <div class="section">
+                    <div class="label">E-mail:</div>
+                    <div class="result">{{ .Email }}</div>
+                </div>
+                <div class="section">
+                    <div><a href="/Profile/Edit">Edit</a></div>
+                    <div><a href="/Profile/Delete" class="deleteAccount">Delete Account</a></div>
+                    <div><a href="/">Back</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

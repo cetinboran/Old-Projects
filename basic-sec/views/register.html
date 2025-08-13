@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="/static/css/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="RegisterForm" method="POST">
+                <div class="section-wrapper">
+                    <div class="section">
+                        <div class="label">Username</div>
+                        <div><input type="text" name="username" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">E-mail</div>
+                        <div><input type="email" name="email" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Password</div>
+                        <div><input type="password" name="password" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Confirm Password</div>
+                        <div><input type="password" name="confirmPassword" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="error">{{ .Error }}</div>
+                    </div>
+                    <div class="section">
+                        <div><button type="submit">Register</button></div>
+                        <div><a href="/Auth/Login">Login</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

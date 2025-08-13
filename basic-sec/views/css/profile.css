@@ -1,0 +1,17 @@
+.result{
+    color: wheat;
+}
+
+.section:last-child{
+    justify-content: center !important;
+}
+
+.section button,a{
+    width: auto !important;
+}
+
+.deleteAccount:hover{
+    border:none;
+    background-color: red !important;
+    color: white !important;
+}

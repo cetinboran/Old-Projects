@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/static/css/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="LoginForm" method="POST">
+                <div class="section-wrapper">
+                    <div class="section">
+                        <div class="label">Username</div>
+                        <div><input type="text" name="username" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="label">Password</div>
+                        <div><input type="password" name="password" id=""></div>
+                    </div>
+                    <div class="section">
+                        <div class="error">{{ .Error }}</div>
+                    </div>
+                    <div class="section">
+                        <div><button type="submit">Login</button></div>
+                        <div><a href="/Auth/Register">Register</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
